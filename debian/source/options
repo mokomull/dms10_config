@@ -1,0 +1,7 @@
+# Don't include the actual DMS-10 config in the Debian source package, but do include Cargo.*.
+tar-ignore = [A-Z][A-Z]*
+# Nor all the Rust binaries
+tar-ignore = target
+
+# And also include the default list of ignores, e.g. `.git`, etc.
+tar-ignore
